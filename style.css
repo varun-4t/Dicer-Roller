@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --color:rgb(0, 183, 255);
+}
+
+html{
+    font-size:10px;
+}
+
+body{
+    border: 4px solid black;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(41, 89, 151);
+    min-height: 100vh;
+}
+
+main{
+    text-align: center;
+}
+
+.title{
+    color:var(--color);
+    font-size: 4rem;
+    margin:0.4rem;
+}
+
+.diceRollContainer{
+    /* border: 2px solid white; */
+    display: grid;
+    grid-template-columns: auto auto ;
+    row-gap:0.5rem ;
+    font-size: 2.4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    /* border: 1px solid; */
+    text-align: center;
+    margin: 1rem;
+}
+
+.player1 , .player2{
+    text-align: center;
+    /* border: 1px solid green; */
+}
+
+.dice{
+    width:60%;
+}
+
+.op{
+    /* border:1px solid black; */
+    text-align: center;    
+    font-size:2.2rem ;
+}
+
+span{
+    font-size: 2rem;
+}
+
+.btn{
+    padding:0.4rem 1.5rem;
+    border-radius: 1.5rem;
+    border:0px;
+    background-color:var(--color) ;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.btn:hover{
+    transform: scale(1.1,1.1);
+    transition: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+
+footer{
+    width:100%;
+    position:sticky ;
+    top:50rem;
+    border: 1px solid;
+}
+
+.foot{
+    position: relative;
+    /* top:23rem; */
+    color:white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.links a{
+ color:white;
+ text-decoration: none;
+ margin: 1px;
+}
+
+@media(min-width: 375px) {
+   html{
+    font-size: 10.5px;
+   }
+   footer{
+    top:50rem;
+   }
+}
+
+@media(min-width: 768px) {
+   html{
+    font-size: 12px;
+   }
+ footer{
+    top:42rem;
+ }
+}
+
+@media(min-width: 1024px) {
+   html{
+    font-size: 18px;
+   }
+    footer{
+    top:38rem;
+   }
+}
+
+@media(min-width: 1440px) {
+   html{
+    font-size: 23px;
+   }
+    footer{
+    top:36rem;
+   }
+}
+
+@media(min-width: 2560px) {
+   html{
+    font-size: 40px;
+   }
+    footer{
+    top:35rem;
+   }
+}
